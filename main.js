@@ -1,7 +1,3 @@
-let express = require('express');
-let app = express();
-app.use(express.json());
-app.use(express.static('public'));
 
 //getting the DOM elements
 var elapsedTime = document.querySelector("#elapsed");
@@ -89,5 +85,3 @@ fetch("https://v3.football.api-sports.io/fixtures?live=all", {
 
 getData();
 
-let port = process.env.PORT || 3000;
-app.listen(port, ()=>console.log(`Listening ${port}...`));
